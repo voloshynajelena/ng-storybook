@@ -40,3 +40,29 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+*storybook.log
+# Ignore Storybook static build output
+storybook-static/
+
+# Ignore Storybook cache and dependencies
+.storybook/.cache/
+.storybook/node_modules/
+
+# Ignore compiled runtime files
+storybook-static/**/*.js
+storybook-static/**/*.map
+storybook-static/**/*.json
+
+# Ignore font assets (if they are auto-generated or downloaded)
+storybook-static/**/*.woff2
+storybook-static/**/*.woff
+
+# Ignore preview and bundle files
+.storybook/preview.ts
+.storybook/runtime*.js
+.storybook/manager-bundle.js*
+.storybook/project.json
+
+# Ignore TypeScript build artifacts
+tsconfig.doc.json
